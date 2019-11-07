@@ -1,0 +1,85 @@
+nav img{
+	margin-left: 550px;
+
+}
+body{
+	/*background-color: #b6dbc7;*/
+	background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+}
+nav h2{
+	font-family: Bradley Hand ITC;
+}
+#navbar nav i{
+	size: 100px;
+	color: rgb(80,10,240);
+	margin-bottom: 0px;
+}
+.topnav{
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+	
+	border-radius: 5px;
+	width: 220px;
+	float: left;
+	
+}
+.body{
+	/*width: 90%;*/
+	margin: 0 2%;
+}
+nav p{
+	font-family: Century Gothic;
+	
+}
+nav p{
+	font-size: 18px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+.topnav1{
+	margin-left: 10px;
+}
+#nav2{
+	/*background-color: blue;*/
+}
+#nav1 li:hover{
+	background-color: #f1f1f1;
+	transition: 0.5s;
+}
+nav li{
+	font-family: Century Gothic;
+}
+
+span{
+	
+	transition: width 1s;
+	display: none;
+}
+li:hover span{
+	height: 25px;
+	display: inline;
+	width: 50px;
+	color: white;
+	margin-right: 5px;
+
+	}
+
+.cart{
+
+	margin-left: 305px;
+	color: #0ff;
+	font-size: 20px;
+	border-radius: 4px;
+	border: 1px solid cyan;
+	padding: 3px;
+	/*text-decoration: none;*/
+
+}
+#nav2 a {
+	color: #0ff;
+}
+
+
+

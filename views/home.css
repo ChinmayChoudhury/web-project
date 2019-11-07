@@ -1,0 +1,98 @@
+header{
+	background-image: url(pic.jpeg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+ul{ 
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+ }
+
+ul li{
+ 	display: inline-flex;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  border:1px solid transparent;
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+ul li.active a{
+  background-color: black;
+  color: white;
+}
+  
+.main{
+  margin: auto;
+}
+
+.title{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+.title h1{
+  color:black;
+  font-size: 70px;
+  font-family:  Bradley Hand ITC;
+  font-weight: bolder;
+}
+.button{
+  position:absolute;
+  margin: auto;
+  top: 62%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+.btn{
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px 30px;
+  color: black;
+  text-decoration:none;
+  transition: 0.6s;
+
+}
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+
+body{
+  /*background-color: #b6dbc7;*/
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+#navbar{
+  margin-top: -50px;
+  margin-right: 5px;
+}
+
+.logo{
+  display: inline-flex; 
+  margin-top: 15px;
+  margin-left: 15px;
+  float: left;
+  font-family:  Bradley Hand ITC;
+}
+
+#navbar-div{
+  float: right;
+}
+
+#tagline{
+  font-family:  Bradley Hand ITC;
+}

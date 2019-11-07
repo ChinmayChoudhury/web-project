@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title> registration  </title>
+<link rel="stylesheet" type="text/css" href="reg.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body ng-app="fapp">
+	
+	<div class="register" >
+	<form method="post" id="register" action="/register" ng-controller="mycntrl" name="regform" novalidate>
+		<h2> Register </h2>
+		
+		<label> User Name: </label><br>
+		
+		<input type="text" name="Uname" id="name" placeholder="Enter your First Name" ng-model="fname" ng-minlength="4" ng-required="true"><br>
+		<p class="error" ng-show="regform.Fname.$invalid && regform.Fname.$touched">min length 4</p><br>
+
+
+		<label> Mobile Number:</label><br>
+		
+		<select id="ph">
+			<option>+91</option>
+			<option>+92</option>
+			<option>+93</option>
+			<option>+94</option>
+			<option>+95</option>
+		</select>
+		
+		<input type="text" name="MNum" id="num"
+		placeholder="Enter your Mobile Number" ng-model="ph" ng-minlength="10" ng-required="true"><br>
+		<p class="error" ng-show="regform.MNum.$invalid && regform.MNum.$touched">Please enter a valid phone number</p><br>
+
+		
+		<label> Email : </label><br>
+		
+		<input type="text" name="email" id="name"
+		placeholder="Enter your Email" ng-model="email" ng-minlength="4" ng-required="true"><br>
+		<p class="error" ng-show="regform.email.$invalid && regform.email.$touched">Please enter a valid email</p><br>
+
+		
+		<label> Password:</label><br>
+		
+		<input type="password" name="pass" id="name"
+		placeholder="Enter your Password" ng-model="pass" ng-minlength="4" ng-required="true"><br>
+		<p class="error" ng-show="regform.pass.$invalid && regform.pass.$touched">please enter password of min 4 char</p><br>
+
+
+
+		<label> Re Enter your password:</label><br>
+
+		<input type="password" name="pass" id="name"
+		placeholder="Enter your Password" ng-model="repass" ng-minlength="4" ng-required="true"><br>
+		<p ng-bind="match_err"></p>
+		
+		<input type="submit" value="Register" id="name" ng-disabled="regform.$invalid"><br>
+		
+	</form>
+	</div>
+
+	<script>
+		var app = angular.module('fapp',[]);
+		app.controller('mycntrl',function($scope){
+			var pas = $scope.pass;
+			var rpas = $scope.repass;
+			if(pas != rpas){
+				$scope.match_err="password donot match";
+			}
+		})
+	</script>
+</body>
+</html>

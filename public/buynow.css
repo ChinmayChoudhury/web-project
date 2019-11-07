@@ -1,0 +1,48 @@
+#navbar nav i{
+	size: 100px;
+	color: rgb(80,10,240);
+	margin-bottom: 0px;
+}
+
+body{
+	/*background-color: #b6dbc7;*/
+	background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+}
+
+.topnav{
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+	
+	border-radius: 5px;
+	width: 220px;
+	float: left;
+}
+
+.topnav1{
+	margin-left: 10px;
+}
+
+#prod_block{
+	background-color: white;
+	/*border: 1px solid black;*/
+	width: 500px;
+	height: 350px;
+	margin-top: 10%;
+	margin-left: 2%;
+	float: left;
+}
+
+#prod_img{
+	width: 500px;
+	height: 350px;
+	/*border: .5px solid black;*/
+}
+
+#prod-details{
+	margin-top: 16%;
+	margin-left: 50%;
+	/*border: 1px solid black;*/
+	padding-top: 13px;
+	width: 600px;
+}

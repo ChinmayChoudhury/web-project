@@ -1,0 +1,71 @@
+
+body{
+	margin: 0 2%;
+	background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+h2{
+	margin: auto;
+	font-size: 75px;
+	font-family: Century Gothic;
+	color: black;
+	text-align:center;
+	padding:20px;
+}
+.register{
+	text-align:center;
+	width:500px;
+	margin:auto;
+	color:white;
+	font-size:18;
+	padding:40px;
+	border-radius:10px;
+}
+#register{
+	margin:auto;
+}
+label{
+	color:black;
+	font-family:Century Gothic;
+	font-size:18px;
+	font-weight: bold;
+}
+#name{
+	width:300px;
+	border:1px solid black;
+	border-radius:7px;
+	outline:0;
+	padding:7px;
+}
+#ph{
+	width:65px;
+	border:1px solid black;
+	border-radius:1px;
+	outline:0;
+	padding:7px;
+}
+#num{
+	width:230px;
+	padding:7px;
+	border:1px solid black;
+	border-radius:3px;
+	outline:0;
+}
+#sub{
+	width: 200px;
+	padding: 7px;
+	font-size: 16px;
+	font-family: sans-seriff;
+	font-style: italic;
+	font-weight: 600;
+	border: none;
+	border-radius: 3px;
+
+}
+
+.error{
+	color: red;
+	font-size: 14;
+	font-family:Century Gothic;
+}
+
